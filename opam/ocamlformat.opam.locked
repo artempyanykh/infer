@@ -11,7 +11,6 @@ homepage: "https://github.com/ocaml-ppx/ocamlformat"
 bug-reports: "https://github.com/ocaml-ppx/ocamlformat/issues"
 depends: [
   "astring" {= "0.8.5"}
-  "base" {= "v0.15.0"}
   "base-bigarray" {= "base"}
   "base-bytes" {= "base"}
   "base-threads" {= "base"}
@@ -30,7 +29,6 @@ depends: [
   "menhirSdk" {= "20211128"}
   "ocaml" {= "4.14.0"}
   "ocaml-config" {= "2"}
-  "ocaml-option-flambda" {= "1"}
   "ocaml-variants" {= "4.14.0+options"}
   "ocaml-version" {= "3.5.0"}
   "ocamlbuild" {= "0.14.1"}

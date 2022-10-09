@@ -251,7 +251,7 @@ let materialize_pre_from_actual callee_proc_name call_location ~pre ~formal:(for
   let* addr_formal_pre, _ = BaseStack.find_opt formal pre.BaseDomain.stack in
   let+ formal_pre = deref_non_c_struct addr_formal_pre typ pre.BaseDomain.heap in
   materialize_pre_from_address callee_proc_name call_location ~pre ~addr_pre:formal_pre
-    ~addr_hist_caller:actual call_state)
+    ~addr_hist_caller:actual call_state )
   |> function Some result -> result | None -> Ok call_state
 
 

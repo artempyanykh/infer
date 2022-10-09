@@ -640,7 +640,7 @@ let get_dynamic_type_unreachable_values vars astate =
         let* attrs = AbductiveDomain.AddressAttributes.find_opt addr astate in
         let* typ = Attributes.get_dynamic_type attrs in
         let+ var = find_var_opt astate addr in
-        (var, addr, typ) :: res)
+        (var, addr, typ) :: res )
         |> Option.value ~default:res )
   in
   List.map ~f:(fun (var, _, typ) -> (var, typ)) res

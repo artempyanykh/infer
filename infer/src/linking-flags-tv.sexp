@@ -9,7 +9,7 @@
  -cclib -Wl,-Bstatic
  -cclib -lsqlite3_stubs -cclib -lsqlite3
  -cclib -Wl,-Bdynamic
- -cclib -lcamlzip -cclib -lz -cclib -lpthread -cclib -lparmap_stubs -cclib -lmtime_clock_stubs
+ -cclib -lcamlzip -cclib -lz -cclib -lpthread -cclib -lmtime_clock_stubs
  -cclib -lrt -cclib -lcamlstr -cclib -lANSITerminal_stubs -cclib -lasync_rpc_stubs
  -cclib -lasync_unix_stubs -cclib -ltime_stamp_counter_stubs -cclib -locaml_intrinsics_stubs
  -cclib -llinux_ext_stubs -cclib -lcore_thread_stubs -cclib -liobuf_unix_stubs

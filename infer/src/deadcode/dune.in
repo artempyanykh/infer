@@ -9,7 +9,7 @@
  (flags
   (:standard -w +60))
  (libraries javalib ANSITerminal async atdgen base base64 bheap cmdliner core fmt iter memtrace
-   mtime.clock.os ocamlgraph oUnit parmap ppx_show.runtime re sawja sqlite3 str unix xmlm yojson
+   mtime.clock.os ocamlgraph oUnit ppx_show.runtime re sawja sqlite3 str unix xmlm yojson
    zarith zip CStubs)
  (modules All_infer_in_one_file)
  (preprocess

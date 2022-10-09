@@ -24,15 +24,14 @@ depends: [
   "dune" {build & >="2.0"}
   "fmt" {>="0.9.0"}
   "iter"
-  "javalib" {>="3.2.1"}
+  "javalib" {>= "3.2.2"}
   "memtrace" {>="0.1.2"}
-  "menhir" {>= "20211128" & != "20211230" & != "20220210"}
+  "menhir"
   "mtime"
   "ocaml" {>="4.12.0"}
   "ocamlfind" {build}
   "ocamlgraph"
   "ounit" {>="2.0.5"}
-  "parmap" {>="1.0-rc8"}
   "ppx_blob"
   "ppx_compare" {>= "v0.15.0" & < "v0.16"}
   "ppx_deriving" {>="4.1"}
@@ -41,7 +40,7 @@ depends: [
   "ppx_fields_conv" {>= "v0.15.0" & < "v0.16"}
   "ppx_show"
   "ppx_yojson_conv" {>= "v0.15.0" & < "v0.16"}
-  "sawja" {>="1.5.11"}
+  "sawja" {>= "1.5.12"}
   "sqlite3"
   "utop" {with-test}
   "xmlm" {>="1.2.0"}

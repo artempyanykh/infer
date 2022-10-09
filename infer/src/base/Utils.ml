@@ -510,7 +510,7 @@ let physical_cores () =
       loop Int.Set.empty Int.Set.empty )
 
 
-let cpus = Setcore.numcores ()
+let cpus = 10 (* TODO: use real shit *)
 
 let numcores =
   let default = cpus / 2 in
@@ -521,11 +521,9 @@ let numcores =
       physical_cores () |> Option.value ~default
 
 
-let set_best_cpu_for worker_id =
-  let threads_per_core = cpus / numcores in
-  let chosen_core = worker_id * threads_per_core % numcores in
-  let chosen_thread_in_core = worker_id * threads_per_core / numcores in
-  Setcore.setcore ((chosen_core * threads_per_core) + chosen_thread_in_core)
+let set_best_cpu_for _worker_id =
+  (* TODO: use real shit *)
+  ()
 
 
 let zip_fold_filenames ~init ~f ~zip_filename =

@@ -74,7 +74,6 @@ depends: [
   "ocaml" {= "4.14.0"}
   "ocaml-compiler-libs" {= "v0.12.4"}
   "ocaml-config" {= "2"}
-  "ocaml-option-flambda" {= "1"}
   "ocaml-variants" {= "4.14.0+options"}
   "ocaml_intrinsics" {= "v0.15.2"}
   "ocamlbuild" {= "0.14.1"}
@@ -84,7 +83,6 @@ depends: [
   "octavius" {= "1.2.2"}
   "ounit" {= "2.2.6"}
   "ounit2" {= "2.2.6"}
-  "parmap" {= "1.2.4"}
   "parsexp" {= "v0.15.0"}
   "ppx_assert" {= "v0.15.0"}
   "ppx_base" {= "v0.15.0"}

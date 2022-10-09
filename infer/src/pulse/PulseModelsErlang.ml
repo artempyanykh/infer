@@ -113,7 +113,7 @@ let prune_type path location (value, hist) typ astate : AbductiveDomain.t Access
     |> PulseResult.ok |> SatUnsat.of_option
   in
   let** astate, instanceof_val = has_erlang_type value typ astate in
-  PulseArithmetic.prune_positive instanceof_val astate)
+  PulseArithmetic.prune_positive instanceof_val astate )
   |> SatUnsat.to_list
 
 

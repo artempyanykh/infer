@@ -49,7 +49,7 @@ let iterate_procedure_callbacks exe_env summary =
           log (fun logger ->
               log_begin_event logger ~name:checker_name ~categories:["backend"]
                 ~arguments:[("proc", `String (Procname.to_string proc_name))]
-                () )) ;
+                () ) ) ;
         let summary =
           Timer.protect
             ~f:(fun () -> callback {summary; exe_env})

@@ -2439,7 +2439,7 @@ module CTrans_funct (F : CModule_type.CFrontend) : CModule_type.CTranslation = s
     let[@warning "-8"] [body] = default_stmt_list in
     let body_trans_result = instruction trans_state body in
     (let open SwitchCase in
-    add {condition= Default; stmt_info; root_nodes= body_trans_result.control.root_nodes}) ;
+    add {condition= Default; stmt_info; root_nodes= body_trans_result.control.root_nodes} ) ;
     body_trans_result
 
 
